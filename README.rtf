@@ -1,28 +1,14 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf470
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+  URBAN AIRSHIP INTEGRATION - iOS (works with Cordova_1.9)
+  Credit to https://github.com/hmkang/UACordova.git for providing the cordova1.5 plugin
 
-\f0\fs24 \cf0 Cordova_plugins\
-===============\
-\
-\
-  URBAN AIRSHIP INTEGRATION - iOS (works with Cordova_1.9)\
-  Credit to https://github.com/hmkang/UACordova.git for providing the cordova1.5 plugin\
-\
-\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\sl264\slmult1\pardirnatural
-\ls1\ilvl0\cf0 {\listtext	1.	}Download https://github.com/Austin007/Cordova_plugins.git\
-{\listtext	2.	}Follow Urban Airship (UA) instructions to create an app\
-{\listtext	3.	}Copy AppDelegate.h/m into your project folder (somewhere appropriate in your xcode build folder)\
-{\listtext	4.	}Copy PushNotification.h/m into your plugins folder\
-{\listtext	5.	}Ensure all 4 files above are linked to your project and your build succeeds\
-{\listtext	6.	}Add key "pushnotification" and value "PushNotification" (case-sensitive) to the plugins list in Cordova.plist. While here, add "*.urbanairship.com" as an ExternalHost (under ExternalHosts)\
-{\listtext	8.	}Download the latest min jQuery file and add to the root of your project (where the app folder lives)\
-{\listtext	9.	}Copy Pushnotification.js to your project root (where app folder lives)\
-{\listtext	10.	}Ensure both js files (immediately above) are included in your app.json file (below your cordva file)\
-{\listtext	11.	}On the first view/panel of your app (index?) create a button and attach the registerAPN() function. Look into index.js\
-{\listtext	12.	}Build the application on a device and test a push using the curl format on UA's page. It should be successful.\
-}
+1.  Download https://github.com/Austin007/Cordova_plugins.git
+2.	Follow Urban Airship (UA) instructions to create an app
+3.	Copy AppDelegate.h/m into your project folder (somewhere appropriate in your xcode build folder)
+4.	Copy PushNotification.h/m into your plugins folder
+5.	Ensure all 4 files above are linked to your project and your build succeeds
+6.	Add key "pushnotification" and value "PushNotification" (case-sensitive) to the plugins list in Cordova.plist. While here, add "*.urbanairship.com" as an ExternalHost (under ExternalHosts)
+8.	Download the latest min jQuery file and add to the root of your project (where the app folder lives)
+9.	Copy Pushnotification.js to your project root (where app folder lives)
+10.	Ensure both js files (immediately above) are included in your app.json file (below your cordva file)
+11.	On the first view/panel of your app (index?) create a button and attach the registerAPN() function. Look into index.js
+12.	Build the application on a device and test a push using the curl format on UA's page. It should be successful.
